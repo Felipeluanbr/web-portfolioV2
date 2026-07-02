@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <AppRoutes></AppRoutes>
+      <AppRoutes/>
       <Footer></Footer>
-      <h1>Oi</h1>
+     
     </>
   );
 }
