@@ -1,41 +1,7 @@
 @import "tailwindcss";
 
 @import "tailwindcss";
-
+@import "./styles/typografia.css";
+@import "./styles/colors.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Pen+Script&display=swap");
 
-@theme {
-  /* Fontes */
-  --font-inter: "Inter", sans-serif;
-  --font-handwriting: "Nanum Pen Script", cursive;
-
-
-  /* Cores */
-  --color-black: #0d0d0d;
-  --color-white: #ffffff;
-  --color-onyx: #181818;
-
-  --color-dark-gray: #808080;
-  --color-medium-gray: rgba(128, 128, 128, 0.5);
-  --color-light-gray: #c5c5c5;
-
-  --color-light-blue: rgba(63, 100, 234, 0.43);
-  --color-light-red: rgba(233, 63, 64, 0.43);
-  --color-light-yellow: rgba(255, 184, 0, 0.43);
-
-  --color-gradient: #1a1a1a;
-
-  /* Dark */
-  --color-dark-card-border: #383737;
-  --color-dark-white10: rgba(255, 255, 255, 0.1);
-  --color-dark-white25: rgba(255, 255, 255, 0.25);
-  --color-dark-black10: rgba(255, 255, 255, 0.7);
-  --color-dark-black25: rgba(21, 21, 21, 0.5);
-
-  /* Light */
-  --color-light-main: #fbfbfb;
-  --color-light-faint-white: #f3f3f3;
-  --color-light-card-border: #ebebeb;
-  --color-light-card-bg: #f6f6f6;
-  --color-light-black10: rgba(21, 21, 21, 0.1);
-}
