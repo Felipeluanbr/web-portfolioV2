@@ -1,20 +1,20 @@
 function Hero(props) {
-  return <h1 className="text-display-xl font-bold">{props.children}</h1>;
+  return <h1 className={`text-display-xl font-bold ${props.className || ""}`}>{props.children}</h1>;
 }
 
 function H2(props) {
-  return <h2 className="text-display-lg font-bold"> {props.children}</h2>;
+  return <h2 className={`text-display-lg font-bold ${props.className || ""}`}> {props.children}</h2>;
 }
 
 function H3(props) {
-  return <h3>{props.children}</h3>;
+  return <h3 className={props.className || ""}>{props.children}</h3>;
 } 
 
 function Text(props){
-    return <p className="text-body-lg font-medium">{props.children}</p>
+    return <p className={`text-body-lg font-medium ${props.className || ""}`}>{props.children}</p>
 }
 function SmalText(props){
-    return <p className="text-body-md font-regular">{props.children}</p>
+    return <p className={`text-body-md font-regular ${props.className || ""}`}>{props.children}</p>
 } 
 
-export { H2, Hero, H3 , Text, SmalTexts};
+export { H2, Hero, H3 , Text, SmalText};
