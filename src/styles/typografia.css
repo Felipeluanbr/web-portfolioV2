@@ -1,5 +1,4 @@
 @theme {
-
   /* Fontes */
   --font-inter: "Inter", sans-serif;
   --font-handwriting: "Nanum Pen Script", cursive;
@@ -26,4 +25,12 @@
   --text-60: 60px;
   --text-80: 80px;
 
+  /* Display */
+  --text-display-xl: 80px;
+  --text-display-lg: 48px;
+  --text-display-md: 32px;
+
+  /* Body */
+  --text-body-lg: 24px;
+  --text-body-md: 16px
 }

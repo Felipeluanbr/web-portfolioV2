@@ -1,5 +1,6 @@
+
 function About(){
-    return <h1>About</h1>
+    return <h1 className="text-display-xl">Ola</h1>
 
 }
 
