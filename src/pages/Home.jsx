@@ -1,5 +1,6 @@
 import { Hero, H2, H3, Text, SmalText } from "../components/ui/typografia.jsx";
-import Geist from "../assets/images/geist.svg?react"
+import Geist from "../assets/images/geist.svg?react";
+import { ButtonPrimary, ButtonSecondary } from "../components/ui/button.jsx";
 
 function Home() {
   return (
@@ -16,8 +17,11 @@ function Home() {
             móveis e web.
           </Text>
 
-          <div>
-            
+          <div className="flex gap-4 mt-10">
+
+            <ButtonPrimary>Veja meu currículo</ButtonPrimary>
+            <ButtonSecondary>Entre em contato</ButtonSecondary>
+
           </div>
         </div>
         <div className="flex items-center justify-center">
