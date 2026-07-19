@@ -11,8 +11,8 @@ import hoverLinksNav from "../../utils/navLinksStyles";
 function Navbar() {
   const [maisOpen, setMaisOpen] = useState(false);
   return (
-    <nav className="font-inter relative flex w-full justify-center items-center max-w-[1024px] h-[60px] bg-black/50 rounded-xl mt-8 border border-dark-card-border/38 text-light-gray p-4 z-50">
-      <div className="flex w-full justify-between">
+    <nav className="font-inter fixed flex w-full justify-center items-center max-w-[1024px] h-[60px] bg-black rounded-xl mt-8 border border-dark-card-border/38 text-light-gray p-4 z-50">
+      <div className="flex w-full justify-between ">
         <div className=" flex gap-10">
           <Link to="/">
             <img src={Logo} alt="Logo" />
@@ -42,8 +42,8 @@ function Navbar() {
 
             { maisOpen &&(
               <div className="absolute top-full left-0 mt-6 w-full h-full bg-black/50 flex flex-col gap-4">
-                <Link className={hoverLinksNav()}>Tecnologia</Link>
-                <Link className={hoverLinksNav()}> Livros</Link>
+                <Link to="/tech-stack" className={hoverLinksNav()}>Tecnologia</Link>
+                <Link to="#" className={hoverLinksNav()}>Livros</Link>
               </div>
             )}
           </div>
@@ -72,6 +72,5 @@ function Navbar() {
     </nav>
   );
 }
-("");
 
 export default Navbar;

@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logos/Logo.svg";
 import hoverLinksNav from "../../utils/navLinksStyles";
 function Footer() {
   return (
-    <footer className="flex flex-col w-full justify-center items-center text-light-gray">
+    <footer className="flex flex-col w-full justify-center items-center text-light-gray  bottom-0">
         <hr className="border border-dark-card-border/38 w-full"/>
         
       <div className="flex w-full max-w-[1024px] mt-8">
@@ -12,7 +11,7 @@ function Footer() {
         <div className="flex w-full justify-between p-4">
           <div className="flex flex-col  text-medium-gray justify-between">
             <div>
-              <Link>
+              <Link to="/">
                 <img src={Logo} alt="Logo" className="w-23 mb-5" />
               </Link>
               <p>Obrigado por passar por aquiッ</p>
@@ -26,7 +25,7 @@ function Footer() {
               <p className="font-bold mb-2">Links</p>
               <Link to="/about" className={hoverLinksNav()}>Sobre</Link>
               <Link to="/projects" className={hoverLinksNav()}>Projetos</Link>
-              <Link className={hoverLinksNav()}>Tecnologia</Link>
+              <Link to="/tech-stack" className={hoverLinksNav()}>Tecnologia</Link>
               <Link to="/contact" className={hoverLinksNav()}>Contato</Link>
             </div>
             <div className="flex flex-col gap-4">

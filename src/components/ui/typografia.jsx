@@ -7,7 +7,7 @@ function H2(props) {
 }
 
 function H3(props) {
-  return <h3 className={props.className || ""}>{props.children}</h3>;
+  return <h3 className={`text-display-md font-bold ${props.className || ""}`}>{props.children}</h3>;
 } 
 
 function Text(props){
