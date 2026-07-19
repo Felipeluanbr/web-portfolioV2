@@ -7,7 +7,7 @@ import EmojiFelipe from "../assets/images/emoji-felipe.png";
 import Desknotes from "../assets/images/Desknotes.png";
 import Bookshelf from "../assets/images/Bookshelf.png";
 import TechStak from "../assets/images/TechStack.png";
-
+import Vector from "../assets/icons/Vector.svg?react"
 
 function Home() {
   return (
@@ -71,6 +71,15 @@ function Home() {
             image={TechStak}
           />
         </div>
+      </div>
+
+      <div className="flex w-[1024px] justify-between mt-30 mb-30 items-center">
+        <div>
+          <H2>Vamos trabalhar juntos.</H2>
+          <SmalText className="text-dark-gray w-4/5">Quer conversar sobre uma oportunidade de criar algo incrível? Estou pronto quando você estiver.</SmalText>
+        </div>
+
+        <ButtonPrimary className="h=[60px]"><Vector className="h-10" ></Vector> Entre em contato </ButtonPrimary>
       </div>
     </>
   );
